@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #b3b3b3;
+  height: 55px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: rgb(65, 63, 63);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav {
+  float: right;
+  padding-top: 11px;
+}
+
+.buttons {
+  height: 20px;
+  width: 100px;
+  font-size: large;
+}
+
+.firstTitle {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-style: italic;
+  background-color: #b3b3b3;
+}
+
+#firstImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#AboutUs {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+#AboutUsText {
+  text-align: center;
+  line-height: 2rem;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 100px;
+}
+
+#TextAndImage {
+  display: inline-block;
+}
+
+#AboutTeamImage {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  float: left;
+  
+}
+
+#AboutTeamText {
+  line-height: 1.5rem;
+  margin: 20px;
+  padding-right: 100px;
+}
+
+#Title {
+  text-align: center;
+}
+
+#AboutProjectText {
+  line-height: 1.5rem;
+  margin: 20px;
+  padding-left: 100px;
+}
+
+#AboutProjectImage {
+  /* display: block; */
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  float: right;
+}
+
+aside{
+  font-family: 'Outfit';
+  background-color: #b3b3b3;
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title{
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus{
+  border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder{
+  color: #a9a9a9;
+}
+
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  cursor: pointer;
+}
+
+.contact-right img{
+  width:  600px;
+}
+
+@media (max-width:800px){
+  .contact-inputs{
+    width: 80vw;
+  }
+  .contact-right{
+    display: none;
+  }
+}
+
+.change-color{
+  border: 2px solid #333;
+}
+
+.color{
+  display: table-cell;
+  width: 50px;
+  height: 50px;
+  margin: 0 1px;
+  cursor: pointer;
+  border: 2px solid #FFF;
+}
+
+.clr1{
+  background-color: #b3b3b3;
+}
+.clr2{
+  background-color: #333;
+}
+.clr3{
+  background-color: #523939;
+}
+.clr4{
+  background-color: #3f1d1d;
+}

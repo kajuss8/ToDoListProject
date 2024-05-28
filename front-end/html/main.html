@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learn to plan your time for FREE">
+    <meta name="keywords" content="ToDoList, List, scedule">
+    <meta name="robots" content="index, follow">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="/front-end/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="webName"><a href="#">MyToDoList</a></h1>
+      <nav>
+        <a id="AboutUsButton" class="buttons" href="#AboutUs">About us</a>
+      </nav>
+      <nav>
+        <a id="ContactUsButton" class="buttons" href="#ContactUs">Contact us</a>
+      </nav>
+      <nav>
+        <a id="SignUpButton" class="buttons" href="/front-end/html/signUp.html" target="_blank">SIGN UP</a>
+      </nav>
+      <nav>
+        <a id="SignInButton" class="buttons" href="/front-end/html/signIn.html" target="_blank">SIGN IN</a>
+      </nav>
+       <nav>
+        <a id="SignInButton" class="buttons" href="/front-end/html/toDoList.html" target="_blank">ToDoList</a>
+      </nav>
+    </header>
+    <section>
+      <h1 class="firstTitle">ACHIEVE YOUR GOALS</h1>
+      <img
+        id="firstImage"
+        src="/front-end/images/pexels-polina-kovaleva-5717463.jpg"
+        alt="ToDoList"
+        loading="eager"
+      />
+    </section>
+    <br>
+    <article>
+      <h2 id="AboutUs"><strong>Welcome to MyToDoList</strong></h2>
+      <p id="AboutUsText">
+        At MyToDoList, we believe in the power of organization to transform
+        lives. Our mission is to provide you with a simple yet powerful tool to
+        help you manage your tasks and achieve your goals efficiently. Whether
+        you're a busy professional juggling multiple projects, a student with
+        deadlines looming, or simply someone looking to stay organized in their
+        daily life, our platform is designed with you in mind.Ready to take
+        control of your to-do list and supercharge your productivity? Sign up
+        for free and start organizing your tasks with MyToDoList today!
+      </p>
+    </article>
+    <article>
+      <div id="TextAndImage">
+        <h2 id="Title">About our team</h2>
+        <br />
+
+        <img
+          id="AboutTeamImage"
+          src="/front-end/images/pexels-fauxels-3184303.jpg"
+          alt="About team"
+          loading="lazy"
+        />
+        <p id="AboutTeamText">
+          At ToDoList, we are more than just a team—we are a family driven by innovation and a shared passion for productivity. Get to know the individuals who make our platform possible. Sarah's vision and leadership are the driving forces behind ToDoList. With a background in project management and a keen eye for user experience, she ensures that our platform remains intuitive and impactful.Michael brings a wealth of technical expertise to the team, overseeing the development of new features and ensuring that ToDoList remains at the forefront of technology.Emily's creativity and attention to detail shine through in every aspect of our platform's design. She is dedicated to creating a seamless and visually appealing user experience.David's strategic insights and marketing prowess help us reach and engage with users worldwide. He's passionate about spreading the word about ToDoList's capabilities. Anna is the friendly face behind our customer support. She goes above and beyond to ensure that every user has a positive experience and gets the most out of ToDoList.
+        </p>
+      </div>
+      <div id="TextAndImage">
+        <h2 id="Title">About our project</h2>
+        <br />
+        <img
+          id="AboutProjectImage"
+          src="/front-end/images/project.jpg"
+          alt="About Project"
+          loading="lazy"
+        />
+        <p id="AboutProjectText">
+          ToDoList is more than just a task manager-it's your personal productivity companion designed to streamline your workflow and help you achieve your goals with ease. Whether you're a busy professional, a student with multiple deadlines, or someone juggling various personal projects, ToDoList is here to simplify your life. Easily create, organize, and prioritize tasks to stay on top of your to-do list.
+        </p>
+      </div>
+    </article>
+
+
+    <aside id="ContactUs">
+        <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="post" class="contact-left ">
+          <div class="contact-left-title">
+            <h2>Contact Us</h2>
+            <hr>
+          </div>
+
+          <input type="hidden" name="access_key" value="c932e945-cdaa-4b45-90a4-350fdeac37f9">
+
+          <input
+            type="text"
+            class="contact-inputs"
+            name="firstName"
+            placeholder="Your name.."
+            required
+          />
+
+          <input
+            type="text"
+            class="contact-inputs"
+            name="lastName"
+            placeholder="Your last name.."
+            required
+          />
+          <input
+            type="email"
+            class="contact-inputs"
+            name="userEmail"
+            placeholder="Your Email.."
+            required
+          />
+
+          <textarea
+            class="contact-inputs"
+            name="message"
+            placeholder="Write something.."
+            required
+          ></textarea>
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          <button type="submit">Submit</button>
+
+          <div class="change-color">
+            <span id="1" onclick="color(this)" class="color clr1"></span>
+            <span id="2" onclick="color(this)" class="color clr2"></span>
+            <span onclick="color(this)" class="color clr3"></span>
+            <span onclick="color(this)" class="color clr4"></span>
+          </div>
+
+        </form>
+        <div class="contact-right">
+        <img src="/front-end/images/right_img.png" alt="Contact us">
+        </div>
+      </div>
+      </div>
+    </aside>
+    <script src="/front-end/javaScript/script.js"></script>
+  </body>
+</html>
